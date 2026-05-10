@@ -54,16 +54,12 @@ Optimized for touch-targets and vertical flow, accessible via the `src/assets/sc
 
 | Mobile Landing Page |
 | :--- |
-| ![Mobile Landing](./src/assets/screenshots/SchoolMobileview/mLanding.PNG)
+| ![Mobile Landing](./src/assets/screenshots/SchoolMobileView/mLanding.PNG) |
 
 #### Mobile Login Variations
 | mOne | mTwo | mThree | mFour | mFive |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Login 1](./src/assets/screenshots/SchoolMobileview/mOne.PNG)
-| ![Login 2](./src/assets/screenshots/SchoolMobileview/mTwo.PNG)
-| ![Login 3](./src/assets/screenshots/SchoolMobileview/mThree.PNG)
-| ![Login 4](./src/assets/screenshots/SchoolMobileview/mFour.PNG)
-| ![Login 5](./src/assets/screenshots/SchoolMobileview/mFive.PNG)
+| ![Login 1](./src/assets/screenshots/SchoolMobileView/mOne.PNG) | ![Login 2](./src/assets/screenshots/SchoolMobileView/mTwo.PNG) | ![Login 3](./src/assets/screenshots/SchoolMobileView/mThree.PNG) | ![Login 4](./src/assets/screenshots/SchoolMobileView/mFour.PNG) | ![Login 5](./src/assets/screenshots/SchoolMobileView/mFive.PNG) |
 
 ---
 
