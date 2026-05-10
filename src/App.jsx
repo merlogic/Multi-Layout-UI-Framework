@@ -32,13 +32,10 @@ function App() {
         <Route path="/" element={<LandingPage />} />
 
         {/* --- SCHOOL UI GROUP (FIXED) --- */}
-        {/* 1. The Landing Page Gallery */}
         <Route path="/school/SchoolHome" element={<SchoolHomePage />} />
         
-        {/* 2. The Login Templates Gallery */}
         <Route path="/school/SchoolLogin" element={<SchoolPage />} />
         
-        {/* 3. The Dashboard (Nested inside Layout) */}
         <Route path="/school" element={<SchoolLayout />}>
           <Route path="dashboard" element={<SchoolDashboard />} />
         </Route>
