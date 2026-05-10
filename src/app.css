@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* 1. GLOBAL BASE STYLES */
+@layer base {
+  :root {
+    /* Main Background & Text Defaults */
+    --background: #020617; /* slate-950 */
+    --foreground: #f8fafc; /* slate-50 */
+    
+    /* Theme Brand Colors */
+    --school-primary: #1e40af;
+    --ecom-primary: #db2777;
+    --delivery-primary: #10b981;
+    --portfolio-primary: #8b5cf6;
+  }
+
+  /* Force the background and text color on the root */
+  html, body, #root {
+    @apply min-h-screen;
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* 2. INDUSTRY THEME WRAPPERS */
+/* These allow you to switch the "feel" of the app by wrapping layouts in these classes */
+
+.school-theme {
+  --background: #f8fafc; /* School uses a light background */
+  --foreground: #0f172a;
+  --primary: var(--school-primary);
+}
+
+.ecommerce-theme {
+  --background: #ffffff;
+  --foreground: #000000;
+  --primary: var(--ecom-primary);
+}
+
+.delivery-theme {
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --primary: var(--delivery-primary);
+}
+
+.portfolio-theme {
+  --background: #020617;
+  --foreground: #ffffff;
+  --primary: var(--portfolio-primary);
+}
+
+/* 3. CUSTOM UTILITY CLASSES */
+@layer components {
+  /* Fix for the white flash: ensure the container fills the screen */
+  .main-container {
+    @apply min-h-screen w-full flex flex-col;
+  }
+
+  /* Navigation active states */
+  .nav-link-active {
+    @apply border-b-2 border-[var(--primary)] font-bold;
+  }
+
+  /* Custom Buttons that adapt to the theme */
+  .btn-theme {
+    background-color: var(--primary);
+    @apply px-6 py-2 rounded-lg text-white font-semibold transition-transform active:scale-95 hover:opacity-90;
+  }
+}
+
+/* 4. ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
